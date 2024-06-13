@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 100px;
+            background-color: rgb(18, 18, 62);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 266);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 80px 100px;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        section {
+            padding: 60px 100px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .secondsection .vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            width: calc(33% - 40px);
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .image-top {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .vertical-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .vertical-desc {
+            color: gray;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .about,
+        .skills,
+        .projects,
+        .contact {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: blueviolet;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            margin: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #12123e;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-btn:hover {
+            background-color: #5a00b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Prakshal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Prakshal</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <a class="download-btn" href="Resume.pdf" target="_blank">Download CV</a>
+            </div>
+            <div class="rightsection">
+                <img src="OIP.jpeg" alt="Profile Picture">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                A portfolio is a comprehensive collection of documents and projects that showcase an individual’s skills, experiences, and accomplishments in a specific field. It's an essential tool for professionals in various industries, including design, development, art, photography, writing, and more.
+            </p>
+        </section>
+        <hr>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Angular</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="projects" class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h2>Projects</h2>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="Project Image">
+                    <div class="vertical-title">Quiz Management</div>
+                    <div class="vertical-desc">
+                        Languages: HTML, CSS, JS, Python.
+                        JEE Exam questions Quiz. User can check their knowledge. In the end of the quiz, the result will be displayed. In the result, the user can see questions with answers, which are correct or incorrect answers and user can see their percentage.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="Project Image">
+                    <div class="vertical-title">FlexFit</div>
+                    <div class="vertical-desc">
+                        Languages: HTML, CSS, JS, Python.
+                        In this website, user can create diet plan, workout plan, nutrition plan. User can calculate the protein, carbs of food. User can see their workout hours and how many calories they burn.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="Project Image">
+                    <div class="vertical-title">Weather App</div>
+                    <div class="vertical-desc">
+                        Languages: HTML, CSS, AngularJS, Python.
+                        In this website, user can check the weather. User can search any place and see the weather.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Name: Shah Prakshal</p>
+            <p>Email: <a href="prakshalshah28@gmail.com">prakshalshah28@gmail.com</a></p>
+            <p>Phone: +91 9737073871</p>
+            <p>Linkedin Profile: <a href="www.linkedin.com/in/prakshal-shah-3b5166308">www.linkedin.com/in/prakshal-shah-3b5166308</a></p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
